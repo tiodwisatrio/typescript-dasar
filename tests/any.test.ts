@@ -1,3 +1,4 @@
+// JANGAN TERLALU SERING MENGGUNAKAN ANY
 describe("Any", () => {
     it("should be support in typescript", () => {
         const mahasiswa: any = {
