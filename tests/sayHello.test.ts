@@ -1,7 +1,9 @@
 import { sayHello } from "../src/sayHello";
 
-describe("sayHello", function () {
-    it("Should say Hello", function () {
-        expect(sayHello("tio")).toBe("Hello tio");
+describe("sayHello", () => {
+    it("Should say Hello", () => {
+        const name = "Hello Tio";
+        expect(sayHello(name)).toBe("Hello Tio");
     })
-})
+}
+)
