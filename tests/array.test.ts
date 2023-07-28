@@ -12,6 +12,15 @@ describe("Array", () => {
         console.info(hobbies);
         console.info(hobbies[0]);
 
+        // Error
         // hobbies[0] = "Makan"; 
-    })
+    });
+
+    it("should support tuple", () => {
+        const person: readonly [string, string, number] = ["Tio", "Satrio", 20];
+        console.info(person);
+
+        // Error
+        // person[0] = "Joko";
+    });
 });
