@@ -1,3 +1,5 @@
+import { Employee, Manager } from "../src/employee";
+
 describe('Indexable Interface', () => { 
     it("Should be support indexable interface", () => {
         interface StringArray {
@@ -29,5 +31,27 @@ describe('Indexable Interface', () => {
 
         expect(dictionary["name"]).toBe("Yono");
         expect(dictionary["address"]).toBe("Jakarta");
+    })
+
+
+    // Extending Interface
+    it("Should be support extending interface", () => {
+        const employee: Employee = {
+            id: "EM01",
+            name: "Wowo",
+            division: "IT",
+        }
+
+        console.info(employee);
+
+        const manager: Manager = {
+            id: "M01",
+            name: "Joni",
+            division: "Marketing",
+            numberOfEmployees: 10,
+        }
+
+        console.info(manager);
+
     })
  })
