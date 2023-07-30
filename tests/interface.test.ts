@@ -5,9 +5,16 @@ describe('Interface', () => {
         const seller: Seller  = {
             id: 1,
             name: "Samsung",
-            address: "Korea"
+            address: "Korea",
+            email: "tiodwisatrio2@gmail.com",
         }
 
         console.info(seller);
+
+
+        // ERROR
+        // seller.email = "ttttt@gmail.com"
+        // console.info(seller);
+
     })
  })
