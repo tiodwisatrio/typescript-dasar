@@ -21,7 +21,6 @@ describe("If Statement", () => {
     })
 
     it("Should support switch case", () => {
-
         const sayHello = (name: string): string => {
             switch (name) {
                 case "Joko":
