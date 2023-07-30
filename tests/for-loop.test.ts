@@ -17,4 +17,12 @@ describe("For Loop", () => {
             console.log(names[index]);
         }
     })
+
+    it("Should support while loop", () => {
+        let counter: number = 0
+        while(counter < 10) {
+            console.log(counter);
+            counter++
+        }
+    })
 })
