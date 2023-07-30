@@ -1,4 +1,5 @@
 import { Employee, Manager } from "../src/employee";
+import {Person} from "../src/person";
 
 describe('Indexable Interface', () => { 
     it("Should be support indexable interface", () => {
@@ -58,7 +59,7 @@ describe('Indexable Interface', () => {
 
     // Function Interface
     it("Should be support function interface", () => {
-        interface Person {
+        interface Person{
             name: string;
             age: number;
             sayHello(name: string): string;
@@ -94,5 +95,19 @@ describe('Indexable Interface', () => {
 
         console.info(domain);
 
+    })
+
+    // Type Assertion => Mengubah tipe data dari suatu variable ke tipe data lain yang lebih spesifik (diinginkan)
+    it("Should be support type assertion", () => {
+        const person: any = {
+            name: "Tio",
+            age: 20,
+        }
+
+        const person2: Person = person as Person;
+        console.info(person2);
+
+        // ERROR KARENA INTERFACE TIDAK MEMILIKI PROPERTI SAYHELLO
+        // console.info(sayHello("Elon"));
     })
  })
