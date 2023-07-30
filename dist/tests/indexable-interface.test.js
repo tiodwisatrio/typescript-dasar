@@ -52,5 +52,16 @@ describe('Indexable Interface', () => {
         };
         console.info(domain);
     });
+    // Type Assertion => Mengubah tipe data dari suatu variable ke tipe data lain yang lebih spesifik (diinginkan)
+    it("Should be support type assertion", () => {
+        const person = {
+            name: "Tio",
+            age: 20,
+        };
+        const person2 = person;
+        console.info(person2);
+        // ERROR KARENA INTERFACE TIDAK MEMILIKI PROPERTI SAYHELLO
+        // console.info(sayHello("Elon"));
+    });
 });
 export {};
