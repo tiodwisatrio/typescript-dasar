@@ -44,5 +44,13 @@ describe('Indexable Interface', () => {
         };
         console.info(person.sayHello("Elon"));
     });
+    // Intersection Types => Menggabungkan 2 interface menjadi 1
+    it("Should be support intersection types", () => {
+        const domain = {
+            name: "Tio",
+            id: "123",
+        };
+        console.info(domain);
+    });
 });
 export {};
