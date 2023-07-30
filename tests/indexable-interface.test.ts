@@ -54,4 +54,24 @@ describe('Indexable Interface', () => {
         console.info(manager);
 
     })
+
+
+    // Function Interface
+    it("Should be support function interface", () => {
+        interface Person {
+            name: string;
+            age: number;
+            sayHello(name: string): string;
+        }
+
+        const person: Person = {
+            name: "Mark",
+            age: 20,
+            sayHello: function (name: string): string {
+                return `Hello ${name}, my name is ${this.name}`;
+            }
+        }
+
+        console.info(person.sayHello("Elon"));
+    })
  })
