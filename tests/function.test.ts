@@ -79,7 +79,6 @@ describe('Function', () => {
         function toUpper(name: string): string {
             return name.toUpperCase();
         }
-        
         expect(sayHello("tio", toUpper)).toBe("Hello TIO");
         expect(sayHello("tio", (name: string): string => name.toUpperCase())).toBe("Hello TIO");
 
