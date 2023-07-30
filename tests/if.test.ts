@@ -20,4 +20,25 @@ describe("If Statement", () => {
 
     })
 
+    it("Should support switch case", () => {
+
+        const sayHello = (name: string): string => {
+            switch (name) {
+                case "Joko":
+                    return `Hi Joko`
+                    break;
+                case "Budi":
+                    return `Hi Budi`
+                default:
+                    return `Hi`
+                
+                }
+            }
+        console.log(sayHello("Joko"))
+        console.log(sayHello("Budi"))
+
+        expect(sayHello("Joko")).toBe("Hi Joko");
+        expect(sayHello("Budi")).toBe("Hi Budi");
+    })
+
 })
