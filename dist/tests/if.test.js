@@ -12,4 +12,10 @@ describe("If Statement", () => {
             console.log("Try Again!");
         }
     });
+    it("Should support ternary operator", () => {
+        const value = 80;
+        const say = value > 70 ? "MANTAPP" : "COBA LAGI";
+        console.log(say);
+        expect(say).toBe("MANTAPP");
+    });
 });
