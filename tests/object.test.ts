@@ -12,4 +12,16 @@ describe("Object Type", () => {
 
         console.log(person);
     })
+
+    it("Should return my profile", () => {
+        const Profile: {name: string, programmingLanguages: string[], frameworks: string[], dbms: string[], tools: string[]} = {
+            name: "Tio Dwi Satrio",
+            programmingLanguages: ["Javascript", "Typescript", "Python", "Kotlin"],
+            frameworks: ["Next", "React", "Node", "Express", "Flask", "Tailwind", "Bootstrap"],
+            dbms: ["MySQL", "PostgreeSQL", "Mongoodb"],
+            tools: ["GIT", "Postman", "Jest", "Babel", "Figma"],
+        }
+        
+        console.log(Profile);
+    })
 })
